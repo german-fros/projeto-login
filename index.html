@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
@@ -15,9 +16,28 @@
         <div id="formulario">
             <h1>Login</h1>
             <p>Seja bem-vindo(a) novamente! Faça login para acessar sua conta.</p>
-            <form action="login.php" method="post">
-                <input type="text" name="usu" id="iusu" placeholder="Usuario">
-                <input type="password" name="sen" id="isen" placeholder="Senha">
+            <form action="login.php" method="post" autocomplete="on">
+                <div class="campo">
+                    <span class="material-icons-round">
+                        person
+                        </span>
+                    <input type="email" name="login" id="ilogin" placeholder="Seu e-mail" autocomplete="email" maxlength="30" required>
+                    <label for="ilogin">Usuario</label>
+                </div>
+                <div class="campo">
+                    <span class="material-icons-round">
+                        vpn_key
+                        </span>
+                    <input type="password" name="sen" id="isen" placeholder="Sua senha" autocomplete="current-password" minlength="8" maxlength="20" required>
+                    <label for="isen">Senha</label>
+                </div>
+                <div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html">
+                        Esqueci a senha
+                        <span class="material-icons-round">mail</span>
+                    </a>
+                </div>
             </form>
         </div>
     </section>
