@@ -15,6 +15,7 @@ TV - acima de 1366px
     
     #login {
         width: 80vw;
+        height: 330px;
     }
 
     #imagem {
@@ -40,6 +41,7 @@ TV - acima de 1366px
     
     #login {
         width: 930px;
+        height: 330px;
     }
     
     #imagem {
@@ -58,7 +60,7 @@ TV - acima de 1366px
     }
     
     #formulario p {
-        font-size: 1.2em;
+        font-size: 1em; 
     }
 
     input[type=submit] {
