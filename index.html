@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
-    <main>
-        <section id="login">
-            <div id="imagem">
-                foto
-            </div>
-            <div id="formulario">
-                <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente! Faça login para acessar sua conta.</p>
-                <form action="login.php" method="post"></form>
-            </div>
-        </section>
-    </main>
+    <section id="login">
+        <div id="imagem">
+        </div>
+        <div id="formulario">
+            <h1>Login</h1>
+            <p>Seja bem-vindo(a) novamente! Faça login para acessar sua conta.</p>
+            <form action="login.php" method="post">
+                <input type="text" name="usu" id="iusu" placeholder="Usuario">
+                <input type="password" name="sen" id="isen" placeholder="Senha">
+            </form>
+        </div>
+    </section>
 </body>
 </html>
